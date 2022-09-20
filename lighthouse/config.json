@@ -4,7 +4,7 @@
       "chromePath": false,
       "numberOfRuns": 5,
       "puppeteerScript": "./lighthouse/pre-collect.js",
-      "url": "REPLACE_WITH_STAGING_URL"
+      "url": "https://www.bbc.co.uk"
     },
     "assert": {
       "assertions": {
