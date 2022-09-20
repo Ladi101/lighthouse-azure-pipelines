@@ -43,7 +43,7 @@ stages:
         displayName: 'Healthcheck'
         inputs:
           command: 'custom'
-          customCommand: 'run lighthouse:healthcheck'
+          customCommand: 'run lighthouse:collect'
 
       - task: Npm@1
         displayName: 'Collect'
@@ -61,7 +61,7 @@ stages:
         displayName: 'Upload'
         inputs:
           command: 'custom'
-          customCommand: 'run lighthouse:upload'
+          customCommand: 'run lighthouse:assert'
 
 - stage: release
   displayName: 'Release'
